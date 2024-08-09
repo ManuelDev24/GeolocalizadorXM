@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeolocalizadorXM.MainPage">
+
+    <StackLayout Margin="5">
+
+        <Frame BackgroundColor="#f1c40f" Padding="20" CornerRadius="0">
+            <Label Text="GeolocalizadorXM"
+               HorizontalTextAlignment="Center"
+               TextColor="#192a56"
+               FontSize="25"
+               FontAttributes="Bold"/>
+        </Frame>
+
+        <Image Source="https://cdn.icon-icons.com/icons2/1494/PNG/512/gps_102930.png"
+           Aspect="Fill"
+           HeightRequest="250"
+           WidthRequest="250"
+           HorizontalOptions="Center"/>
+
+        <Label x:Name="label"
+           Text="El Plugin Geolocator es un complemento multiplataforma simple el cual sirve para obtener la ubicación del GPS"
+           FontSize="16"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"/>
+
+        <Label Text="Latitud:"
+           Padding="10"
+           Margin="1"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+           FontSize="20"/>
+
+        <Label x:Name="lat"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+           FontSize="20"
+           TextColor="#1B1464"/>
+
+        <Label Text="Longitud:"
+           Padding="10"
+           Margin="1"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+           FontSize="20"/>
+
+        <Label x:Name="lon"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+           FontSize="20"
+           TextColor="#1B1464"/>
+
+        <Button Text="Mostrar Mapa" Clicked="MostrarMapa"
+
+            x:Name="VerMapa"
+           Padding="5"
+           TextColor="#192a56"
+           FontSize="20"
+           FontAttributes="Bold"
+           BackgroundColor="#fbc531"
+           BorderColor="#4cd137"
+           BorderWidth="5"
+           CornerRadius="5"
+           WidthRequest="150"
+           HeightRequest="75"/>
+
+    </StackLayout>
+
+
+</ContentPage>
